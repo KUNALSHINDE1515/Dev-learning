@@ -1,0 +1,43 @@
+li {
+    font-weight: 700;
+    font-size: 32px;
+}
+.html{
+    color: #E55827;
+}
+.css{
+    color: #2862E9;
+}
+.Js{
+    color: #EFD81D;
+}
+.React{
+    color: #58C4DC;
+}
+.Tw{
+    color: #0FB4AE;
+}
+
+/* #html {
+    font-size: 32px;
+}
+#css {
+    font-size: 32px;
+}
+#Js {
+    font-size: 32px;
+}
+#React {
+    font-size: 32px;
+}
+#Tw {
+    font-size: 32px;
+} */
+
+[class] {
+    background-color: green;
+}
+
+[kunal] {
+    background-color: #E55827;
+}
