@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0 ;
+    background-color: aliceblue;
+    text-align: center;
+    height: 100%;
+
+}
+
+header{
+    background-color: rgb(162, 42, 162);
+    /* margin-top: 5px; */
+    padding: 0rem;
+    text-align: center;
+}
