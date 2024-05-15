@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+}
+
+.inline-block{
+    background-color: coral;
+    display: inline-block;
+}
+
+span{
+    display: inline-block;
+    background-color: cadetblue;
+    width: 30px;
+    height: 40px;
+    padding: 25px;
+    border: 10px solid pink;
+}
+iframe{
+    height: 500px;
+    width: 500px;
+}
+
+
+
