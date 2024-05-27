@@ -1,0 +1,40 @@
+main{
+    height: 400px;
+    width: 600px;
+    /* background-color: darkkhaki; */
+    position: relative;
+}
+.box{
+    color: rgb(241, 46, 6);
+    height: 300px;
+    width: 300px;
+    background-color: rgba(33, 255, 33, 0.523);
+    /* background-image: url(https://d1bltcifwhkdae.cloudfront.net/uploads/Photohero-1024x290.jpg); */
+    background-size: cover;
+    /* background-position: -3px -9px; */
+    /* opacity: 1 ; */
+    /* transform: scale(5); */
+    /* transform-origin: 100% 100%; */
+
+    /* transform: rotate(45deg); */
+    /* transform: translateY(100px); */
+    /* transform: translateX(100px); */
+    margin-top: 100px;
+    position: absolute;
+    /* left: 50%; */ 
+    /* top: 50%; */
+    transform: translate();
+
+    box-shadow: 50px 20px 4px rgba(0,0, 0, 0.3);
+    text-shadow:  2px 2px red;
+    transition: all 200ms;
+}
+
+.box:hover{
+    background-color: violet;
+    transform: rotate(45deg) scale(1.5);
+}
+
+h1{
+    text-shadow:  2px 2px red;
+}
