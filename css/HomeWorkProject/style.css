@@ -27,5 +27,36 @@ p{
     padding-left: 10px;
 }
 span{
-    justify-content: space-between;
+    color: aliceblue;
+    padding: 10px;
+    /* margin-left: 20px; */
+}
+#right{
+    margin-left: 109px;
+    color:aliceblue;
+}
+#left{
+    color: #28F2F4;
+}
+
+hr{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer{
+    margin-top: 21px;
+    text-align: center;
+}
+h5{
+    color: white;
+
+}
+b{
+    color: #6b6b6b;
+}
+.svg{
+    /* height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+    margin-left: 14px; */
 }

@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    font-family: cursive;
+}
+.hashtag-header{
+    /* height: 300px; */
+    padding: 5rem;
+    background-color: #065fd4;
+    color: white;
+}
+h2{
+    margin-bottom: 16px;
+}
