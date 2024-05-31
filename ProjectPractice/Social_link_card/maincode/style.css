@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    background-color: #141414;
+    font-family: cursive;
+}
+.cart{
+    height: 600px;
+    width: 384px;
+    background-color: #1F1F1F;
+    margin: auto;
+    inset: 0;
+    position: fixed;
+    border-radius: 12px;
+}
+.cart img{
+border-radius: 52px;
+display: block;
+margin-left: 139px;
+margin-top: 35px;
+height: 100px;
+width: 100px;
+}
+.write{
+    text-align: center;
+}
+h2{
+    color: #FEFEFE;
+}
+h3{
+    color: #B7DE38;
+}
+h4{
+    color: #999999;
+}
+.link-cart{
+    height: 43px;
+    width: 304px;
+    background-color: #333333;
+    display: block;
+    margin-top: 15px;
+    margin-left: 40px;
+    border-radius: 7px
+}
+.link-cart h5{
+    text-align: center;
+    color: white;
+    display: block;
+    margin-top: 12px;
+    padding: 12px;
+}
+.link-cart h5:hover{
+    background-color: #B7DE38;
+}

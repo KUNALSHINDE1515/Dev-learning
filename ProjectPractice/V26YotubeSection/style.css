@@ -4,10 +4,31 @@ body{
 }
 .hashtag-header{
     /* height: 300px; */
-    padding: 5rem;
+    padding: 4rem;
     background-color: #065fd4;
     color: white;
+    background-image: url(/ProjectPractice/V26YotubeSection/background.png);
+    background-size: 260px;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: -160px;
 }
-h2{
+.hashtag-header h1{
     margin-bottom: 16px;
+    font-size: 2rem;
+}
+.hashtag-header span{
+    font-size: 1.5rem;
+}
+.hashtag-header img{
+    width: 80px;
+    height: 5rem;
+    border: 5px solid white;
+    border-radius: 100%;
+    vertical-align: middle;
+    
+}
+/* This is called Adjacent sibling selector */
+img +img {
+    margin-left: -1rem;
 }
