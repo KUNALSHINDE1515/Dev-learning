@@ -29,6 +29,11 @@ body{
     
 }
 /* This is called Adjacent sibling selector */
-img +img {
-    margin-left: -1rem;
+img {
+    margin-left: -3rem;
+}
+.images-container{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
 }
