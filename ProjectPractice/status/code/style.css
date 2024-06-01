@@ -1,0 +1,20 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.cart-main{
+    height: 450px;
+    width: 872px;
+    background-color:hsl(244, 38%, 16%) ;
+    margin: 125px;
+    border-radius: 15px;
+}
+.right-container{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
