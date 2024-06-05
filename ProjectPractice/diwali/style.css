@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section{
+    min-height: 100vh;
+    /* background-color: #F99501; */
+    background-image: url('/ProjectPractice/diwali/images/orange-backdrop\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.paragraph-and-audio{
+    font-size: 46px;
+    font-weight: 400;
+    font-family: "Salsa", cursive;
+    max-width: 400px;
+    margin-left: 15rem;
+}
