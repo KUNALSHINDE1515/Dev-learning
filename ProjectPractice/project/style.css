@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content-nav{
+    display: flex;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 10px;
+    color: white;
+    position: sticky;
+}
+
+.content-nav a{
+    color: white;
+    text-decoration: none;
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    /* max-width: 700px; */
+}
+.box{
+    height: 300px;
+    width: 396px;
+    background-color: blueviolet;
+    margin: 25px;
+    
+}
+
+
+
