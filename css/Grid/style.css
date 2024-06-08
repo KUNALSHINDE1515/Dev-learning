@@ -1,0 +1,52 @@
+.container{
+    background-color: lightblue;
+    min-height: 60vh;
+    display: grid;
+    /* grid-template-columns: 100px 100px 100px; */
+    grid-template-columns: repeat(4, 100px);
+    /* grid-template-rows: 100px 100px 100px; */
+
+    grid-template-rows: repeat(3,100px); /*repeat three times 100px vachtani lakshayat thivayache*/
+}
+.box{
+    color: white;
+    font-size: 4rem;
+    width: 80px;
+}
+.box1{
+    background-color: brown;
+    grid-column-start: 2;
+    grid-row-start: 2;
+
+    grid-column-end: 3;
+    grid-row-end: 4;
+
+
+}
+.box2{
+    background-color: darkslategray;
+}
+.box3{
+    background-color: blue;
+}
+.box4{
+    background-color: chartreuse;
+}
+.box5{
+    background-color: coral;
+}
+.box6{
+    background-color: darkgoldenrod;
+}
+.box7{
+    background-color: fuchsia;
+}
+.box8{
+    background-color: tomato;
+}
+.box9{
+    background-color:black;
+}
+.box10{
+    background-color: violet;
+}
