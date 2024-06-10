@@ -1,0 +1,216 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* overflow: hidden; */
+}
+body{
+    background-color: #0f0f0f;
+}
+.top-nav-bar {
+  /* overflow: scroll; */
+  display: flex;
+  height: 60px;
+  padding-top: 5px;
+  /* background-color: cadetblue; */
+  padding-left: 16px;
+  padding-right: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-name i {
+  color: white;
+  /* font-weight: 400; */
+  margin: 3px;
+  padding: 1px;
+  height: 40px;
+  width: 40px;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yt-logo {
+  display: flex;
+  background-image: url("images/yotube.logo.webp");
+  padding-left: 2px;
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+}
+h4 {
+  /* display: flex; */
+  color: white;
+  font-size: 20px;
+  padding: 2px;
+  margin-left: 2px;
+}
+
+/* Search tab */
+.search-input {
+  display: flex;
+  width: 40%;
+  height: 40px;
+}
+.search-input input {
+  height: 40px;
+  width: 100%;
+  background-color: #121212;
+  color: aliceblue;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-align: center;
+}
+.search-input input:hover {
+  outline: 1px solid blue;
+}
+.input-search-icons {
+  background-color: #222222;
+  height: 40px;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.input-search-icons i {
+  color: white;
+}
+.mic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #272727;
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  border-radius: 25px;
+}
+.mic i {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons i {
+  margin-right: 40px;
+  color: white;
+  width: 40px;
+  font-size: 35px;
+}
+
+/* main container styling */
+.main-content-container {
+  display: flex;
+  margin-left: 10px;
+}
+.hero-main-left-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  /* overflow: scroll; */
+}
+.box {
+  display: flex;
+  font-size: medium;
+  color: white;
+  align-items: center;
+  justify-content: left;
+  height: 40px;
+  width: 200px;
+  padding: 5px;
+  /* background-color: pink; */
+  border-radius: 10px;
+ margin-bottom: 5px;
+}
+.box:hover{
+    background-color: #272727;
+}
+.box i{
+   margin-right: 10px;
+   margin-left: 15px;
+   text-align: start;
+
+}
+.box p {
+  margin-left: 10px;
+  text-decoration: none;
+  min-width: 60px;
+}
+.outline{
+  outline: 1px solid #272727;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.you{
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 3px;
+  margin-top: 5px;
+}
+.you i{
+  margin-left: 15px;
+  font-weight: lighter;
+}
+.sub-box{
+  color: white;
+ margin: 10px;
+ font-weight: 500;
+}
+.Subsription{
+  display: flex;
+  align-items: center;
+}
+.Subsription img{
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  margin-left: 5px;
+}
+.Subsription p{
+  margin-left: 15px;
+}
+
+/* right container design */
+
+
+/* second nav designing */
+.hero-main-right-container{
+ /* display: flex;  */
+  /* flex-direction: column; */
+  margin-right: 15px;
+  width: 100%;
+}
+.second-nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin-top: 10px;
+  width: 100%;
+
+}
+
+span{
+  background-color: aliceblue;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+
+}
+.video-containt{
+  /* background-color: aliceblue; */
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows:repeat(3,200px);
+}
