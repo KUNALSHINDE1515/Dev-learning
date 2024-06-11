@@ -17,6 +17,13 @@ h1 {
     padding-bottom: 3rem;
     max-width: 1200px;
     margin-inline: auto;
+    grid-template-areas: 
+    'Purple'
+    'Orange '
+    'Blue'
+    'Green'
+    'Violet'
+  ;
 }
 .box {
   min-height: 200px;
@@ -30,37 +37,54 @@ h1 {
 }
 .box-1 {
   background-color: blueviolet;
+  grid-area: Purple;
 }
 .box-2 {
   background-color: red;
+  grid-area: Orange;
 }
 .box-3 {
   background-color: blue;
+  grid-area: Blue;
 }
 .box-4 {
   background-color: chartreuse;
+  grid-area: Green;
 }
 .box-5 {
   background-color: cadetblue;
+  grid-area: Violet;
 }
 @media (min-width:600px){
     .card-container{
-        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr; */
+
+        grid-template-areas: 
+        'Purple Purple'
+        'Orange Blue'
+        'Green Blue'
+        'Violet Violet'
+      ;
     }
     .box{
         min-height: 300px;
     }
-    .box-1,
-    .box-5{
+    /*.box-1,
+     .box-5{
         grid-column-start: span 2;
     }
     .box-3{
         grid-row-start: span 2;
     }
-   
+    */
 }
 @media (min-width:1000px){
      .card-container{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+
+        grid-template-areas: 
+        'Purple Purple Orange Blue'
+        'Green Violet Violet Blue'
+      ;
      }
 }
