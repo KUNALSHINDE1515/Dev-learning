@@ -1,0 +1,112 @@
+/* ff */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #202124;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+.container {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-inline: 18px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 500px;
+}
+.search-menu{
+    width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+.input-search {
+  border: 1px solid white;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 26px;
+  margin-top: 32px;
+
+}
+.input-search:hover ,
+.input-search:focus-within{
+  background-color: #303134;
+  border: #303134;
+  box-shadow: 0px 0px 4px 2px #1f2022;
+}
+.input-search:focus-within{
+    border-radius: 24px 24px 0 0;
+}
+.search-icons ,
+.Close-icon {
+  width: 24px;
+}
+.Close-icon{
+    display: none;
+}
+.input-search:focus-within .Close-icon{
+    display: block;
+}
+.input-search input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+  width: 100%;
+  padding: 18px;
+  font-size: 18px;
+  font-family: inherit;
+ 
+  /* background-color: #fff; */
+}
+.suggestion-menu{
+    background-color:#303134 ;  
+    box-shadow: 0px 6px 4px 2px #1f2022;
+    border-radius: 0 0  24px 24px;
+    padding: 0px 0px 16px;
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+.top-border{
+    border-top: 1px solid #5f6368;
+    margin-inline: 24px;
+    margin-bottom: 8px;
+}
+.suggestion-menu p{
+    margin: 0;
+    padding: 8px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.input-search:focus-within + .suggestion-menu{
+    display: block;
+}
+.suggestion-menu p:hover{
+    background-color: #3c4043;
+}
+.doodle-shapes{
+    position: fixed;
+    max-height: 100%;
+    height: 258px;
+    right: 32px;
+    bottom: 0;
+}
+.parent{
+    position: relative;
+    z-index: -1;
+}
