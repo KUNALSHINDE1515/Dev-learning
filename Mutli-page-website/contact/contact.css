@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+  margin: 0 5vw;
+  background-color: #F0F4F5;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.items a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* contact us styling */
+.main-contact{
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-card{
+  min-height: 430px;
+  min-width: 350px;
+  box-shadow: 0 0 10px black;
+  padding: 20px;
+  border-radius: 10px;
+}
+.contact-card h1{
+  text-align: center;
+}
+form{
+  margin-top: 10px;
+}
+h3{
+  margin-top: 15px;
+}
+input{
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+}
+.Message{
+  padding-bottom: 60px;
+}
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.contact-card button{
+  text-align: center;
+  padding: 15px 40px;
+  background-color: #20BC7E;
+  border-radius: 15px;
+  border: none;
+}
