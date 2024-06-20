@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* designing the main content */
+:root{
+    --padding-inline-block: 0px 20px;
+    --padding-content-inline:30px;
+    --paregraph-color: #B7BABE;
+    --heading-color:#4A535C;
+    --heading-font-size: 2rem;
+}
+.nav-bar{
+    background-image: url(./images/bg-header-desktop.png);
+    background-size: cover;
+    height: 40vh;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* hero section designing */
+.hero-main-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: var(--padding-inline-block);
+}
+.content{
+    padding-inline: var(--padding-content-inline);
+    width: 37%;
+}
+
+.content h1, .content h2{
+    color: var(--heading-color);
+    margin-bottom: 20px;
+}
+.content h1{
+    font-size: var(--heading-font-size);
+}
+.content h2{
+    font-size: var(--heading-font-size);
+}
+.content p{
+    color: var(--paregraph-color);
+    margin-bottom: 20px;
+    line-height: 1.7rem;
+}
+.content button{
+    margin-block: 20px;
+    padding: 10px 25px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 24px;
+    color: white;
+    font-size: 1rem;
+}
+.IOs{
+    background-color: #26BBA5;
+}
+.MAc{
+    background-color: #6174FF;
+}
+
+/* designing second-hero-section */
+
+.second-hero-section{
+    display: flex;
+    margin-top: 20px;
+    padding-top: 20px;
+    min-height: 60vh;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+.computer-img{
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.computer-img img{
+    width: 100%;
+}
+.second-content{
+    width: 50%;
+    display: flex;
+    text-align: start;
+    justify-content: space-evenly;
+    flex-flow: column;
+    padding: 30px;
+}
+.contents{
+    width: 70%;
+    padding: 10px;
+}
+.contents h3 {
+   padding: 10px;
+   font-size: 1.5rem;
+   color: var(--heading-color);
+   font-weight: 700;
+}
+
+.contents p{
+    padding: 10px;
+    color: var(--paregraph-color);
+
+}
+
+/* third content designing */
+
+.third-hero-section{
+    display: flex;
+    justify-content: center;
+    padding: 10px 25px;
+    align-items: center;
+    text-align: center;
+     min-height: 30vh;
+    padding: 10px;
+    margin-top: 10px;
+}
+.third-hero h2{
+    color: var(--heading-color);
+    padding: 10px;
+    font-size: var(--heading-font-size);
+}
+.third-hero p{
+    color: var(--paregraph-color);
+    padding: 10px;
+}
+
+.img-container {
+  
+    padding: 10px;
+}
+
+/* designing client section */
+
+.text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 15vh;
+    text-align: center;
+    flex-direction: column;
+}
+.text-container h2{
+    color: var(--heading-color);
+    font-size: var(--heading-font-size);
+    padding: 10px;
+    margin: 10px;
+}
+.text-container p{
+    color: var(--paregraph-color);
+}
+
+/* client section */
+
+.clients{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 20vh;
+    text-align: center;
+    padding: 20px;
+}
+.data{
+    padding: 10px;
+    width: 20%;
+}
+.clients-logo{
+    margin-bottom: 20px;
+}
+.clients-logo img{
+    padding: 10px;
+}
+.data h2 {
+    color: var(--heading-color);
+    font-size: var(--heading-font-size);
+    padding: 10px;
+}
+.data p{
+    color: var(--paregraph-color);
+    line-height: 1.7rem;
+}
+
+/* clients-imgae-section designing */
+
+.clients-imgae-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+    padding: 20px;
+}
+
+.clients-imgaes{
+    padding: 20px 40px;
+}
+
+/* media quries */
+
+@media(max-width:700px){
+    .nav-bar{
+        background-image: url(./images/bg-header-mobile.png);
+        background-size: cover;
+        min-width:40vh;
+    }
+}
