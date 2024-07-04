@@ -17,7 +17,7 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullname.userFullName.fName);
+// console.log(regularUser.fullname.userFullName.fName);
 const obj1 = {1:"a", 2:"b"}
 const obj2 = {3:"a", 4:"b"}
 
@@ -56,8 +56,46 @@ const Users = [
 
 Users[1].email
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
+// console.log(Object.keys(tinderUser));
 
-console.log(tinderUser.hasOwnProperty.isloggedIn);
+// console.log(tinderUser.hasOwnProperty.isloggedIn);
+
+
+
+const course = {
+    cNAme: "Js in HIndi",
+    price: 999,
+    CourseInstructor: "Hitesh"
+}
+// course.CourseInstructor
+
+
+//This is caaled object destrucured
+const {CourseInstructor: instructor} = course
+console.log(instructor);
+
+// this called destructuring
+
+// const navbar = ({company}) => {
+
+// }
+// navbar(company = "Hitesh")
+
+
+
+// api json
+// {
+//     "name":"Kunal",
+//     "coursname":"js in hindi",
+//     "price": "free"
+// }
+
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
+
