@@ -1,0 +1,25 @@
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.counter-value{
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 800;
+}
+.increment-decrement-btn{
+    padding: 10px ;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: cadetblue;
+    color: black;
+    font-weight: 600;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
