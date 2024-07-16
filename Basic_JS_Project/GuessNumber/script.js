@@ -5,6 +5,4 @@ const h3 = document.querySelector('.result')
 
 const result = InputNUmber === guessNumber
 
-h3.innerTExt = result
-
 
