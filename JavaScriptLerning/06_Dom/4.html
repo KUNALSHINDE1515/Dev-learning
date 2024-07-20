@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(lName) {
+        const liItem = document.createElement('li')
+        liItem.innerHTML = `${lName}`;
+        document.querySelector(".language").
+        appendChild(liItem)
+    }
+    addLanguage("python")
+    addLanguage("ReactJs")
+
+    function addOptiLang(lName) {
+       const liitem =  document.createElement('li')
+       liitem.appendChild(document.createTextNode(lName))
+       document.querySelector('.language').appendChild(liitem)
+    }
+    addOptiLang("TypeScript")
+
+    //edit
+
+    const seconLang = document.querySelector("li:nth-child(2)")
+    // seconLang.innerHTML = "Mojo"
+    const newLi = document.createElement('li')
+    newLi.textContent  = "Mojo"
+    seconLang.replaceWith(newLi)
+
+    // edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = "<li> TypeScript</li>"
+
+    const lastL = document.querySelector('li:last-child')
+    lastL.remove()
+</script>
+</html>
