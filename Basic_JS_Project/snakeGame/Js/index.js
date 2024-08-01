@@ -14,8 +14,8 @@ let snakeArr = [
 
 function main(ctime) {
     window.requestAnimationFrame(main);
-    console.log(ctime);
-    if ((ctime - lastPaintTime) / 1000 <1 /speed) {
+    // console.log(ctime);
+    if ((ctime - lastPaintTime) / 1000 < 1 /speed) {
         return
     }
     lastPaintTime = ctime
@@ -31,7 +31,7 @@ function gameEngine() {
         snakeElement = document.createElement('div')
         snakeElement.style.gridRowStart = e.y;
         snakeElement.style.gridColumnStart = e.x;
-        
+        board.appendChild(snakeElement)
     })
 }
 
