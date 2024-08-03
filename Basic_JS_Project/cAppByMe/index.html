@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter app</title>
+  </head>
+  <!-- styling -->
+  <style>
+    .container {
+      background-color: aqua;
+      text-align: center;
+      height: 100%;
+      padding: 20px;
+    }
+    #Decrement,
+    #Increment,
+    #resetBtn {
+      border: 1px solid black;
+      padding: 10px;
+      border-radius: 10px;
+      margin-top: 5px;
+    }
+    #value {
+      padding: 15px;
+      font-size: 50px;
+      font-weight: 800;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Counter App</h1>
+      <span id="Decrement"> DECREMENT BY 1 </span>
+      <span id="value">0</span>
+      <span id="Increment"> INCREMENT BY 1 </span>
+      <br>
+      <button id="resetBtn">Reset Value</button>
+    </div>
+  </body>
+
+  <script>
+    const result = document.getElementById("value");
+    const decrement = document.getElementById("Decrement");
+    const increment = document.getElementById("Increment");
+    const resetBtn = document.getElementById("resetBtn");
+
+    decrement.addEventListener("click", () => {
+      const countVAlie = Number(result.innerText);
+      result.innerText = countVAlie - 1;
+    });
+    increment.addEventListener("click", () => {
+      const countVAlie = Number(result.innerText);
+      result.innerText = countVAlie + 1;
+    });
+    resetBtn.addEventListener("click", () => {
+      result.innerText = Number(0);
+    });
+  </script>
+</html>
