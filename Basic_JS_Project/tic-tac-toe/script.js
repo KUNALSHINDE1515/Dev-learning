@@ -25,7 +25,6 @@ function resetGame() {
 }
 boxes.forEach( (box) => {
     box.addEventListener('click', () => {
-        // console.log("box was clicked");
         if (turnO === true) {
             box.innerHTML = "O"
             turnO = false
@@ -73,3 +72,4 @@ function checkWiner(){
 
 newGAmeBtn.addEventListener('click', resetGame);
 resetBtn.addEventListener('click', resetGame)
+
