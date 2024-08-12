@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.cotainer-pass{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.5);
+    text-align: center;
+    width: 350px;
+    background-color: white;
+    
+}
+.header{
+    background-color: blue;
+    color: white;
+    width: 100%;
+    border-radius: 10px 10px  0 0; 
+    /* margin-bottom: 10px; */
+}
+.diplay-box{
+    margin-bottom: 5px;
+    position: relative;
+}
+#pass-input{
+    width: 75%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#copy{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: large;
+    width: 20%;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
