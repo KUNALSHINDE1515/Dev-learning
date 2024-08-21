@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.left-container{
+    padding-left: 40px;
+    padding-top: 40px;
+    background-color: #FFFDFE;
+    background-image: url(./base-apparel-coming-soon-master/images/bg-pattern-desktop.svg);
+}
+.maint-text-container{
+    padding-left: 10px;
+    
+}
+#text-color{
+    font-size: 4rem;
+    margin-top: 15vh;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+}
+#were{
+    color: #D3A6AA;
+    font-weight: 300;
+    display: block;
+}
+#comming{
+    font-weight: 700    ;
+}
+
+.maint-text-container p {
+    margin-top: 20px;
+}
+
+
+
+
+
+/* creatibg input filld */
+.input-container{
+    border: 1px solid rebeccapurple;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+.input-container input{
+    padding: 13px 10px;
+    border: none;
+    outline: none;
+    text-align: start;
+    width: 100%;
+}
+.input-container button{
+    padding: 10px 30px;
+    background-color: #F19B9C;
+    border: none;
+    outline: none;
+}
