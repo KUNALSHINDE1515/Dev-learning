@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Frontend Mentor | Article preview component</title>
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Article preview component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="container">
+          <div class="left-container">
+            <img src="./images/drawers.jpg" alt="drawers" />
+          </div>
+          <div class="right-container">
+            <p id="bold">
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </p>
+            <p id="light">
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips to
+              help you make any room feel complete.
+            </p>
 
-</head>
-<body>
-<main>
-  <div class="main-container">
-    <div class="container">
-      <div class="left-container">
-        <img src="./images/drawers.jpg"  alt="drawers">
-      </div>
-      <div class="right-container">
-        <p id="bold">Shift the overall look and feel by adding these wonderful 
-          touches to furniture in your home</p>
-          <p id="light"> Ever been in a room and felt like something was missing? Perhaps 
-            it felt slightly bare and uninviting. I’ve got some simple tips 
-            to help you make any room feel complete.</p>
-  
             <div class="about-cart">
               <div id="img-name-container">
-                <img src="./images/avatar-michelle.jpg" alt="avatar-michelle">
+                <img src="./images/avatar-michelle.jpg" alt="avatar-michelle" />
                 <div id="name-date">
                   <p id="client-name">Michelle Appleton</p>
                   <p id="date">28 Jun 2020</p>
                 </div>
               </div>
-  
-              <div id="share-btn">
-                <img src="./images/icon-share.svg" alt="Share">
-              </div>
 
-              <div class="share-apps">
-                <h1>share</h1>
+              <div id="share-btn">
+                <img src="./images/icon-share.svg" alt="Share" />
               </div>
             </div>
-
-            
+            <div id="share-apps">
+              <p>S H A R E</p>
+              <a href="https://www.facebook.com/"><img src="./images/icon-facebook.svg" alt="icon-facebook" /></a>
+              <a href="https://peerlist.io/notifications"><img src="./images/icon-pinterest.svg" alt="icon-pinterest" /></a>
+              <a href="https://x.com/?lang=en"><img src="./images/icon-twitter.svg" alt="icon-twitter" /></a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</main>
- <script src="./script.js"></script>
-</body>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
