@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.container{
+    background-color: white;
+    text-align: center;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.heading{
+    margin-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+#texarea{
+    width: 90%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button{
+    width: 90%;
+    background-color: blue;
+    color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.output{
+    margin-bottom: 10px;
+}
