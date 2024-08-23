@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000px;
+    margin-bottom: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+    font-style: 2.5rem;
+    font-weight: bold;
+
+}
+.nav-bar{
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    margin: 7px;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.img-container{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+img{
+    width: 100%;
+}
+#coffee{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+}
