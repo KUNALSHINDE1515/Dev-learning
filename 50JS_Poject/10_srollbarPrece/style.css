@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lavender;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+.scrolbar{
+    background-color: green;
+    /* width: 5%; */
+    position: fixed;
+    height: 40px;
+    top: 0;
+    left: 0;
+}
