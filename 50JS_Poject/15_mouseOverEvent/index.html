@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Over</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: aquamarine;
+        }
+        .contaaner{
+            display: flex;
+            justify-content: space-between;
+        }
+        .xpos,.ypos{
+            width: 300px;
+            border: 3px solid black;
+            margin: 40px;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.5rem;
+            position: relative;
+        }
+        h4{
+            position: absolute;
+            top: -60%;
+            padding-left: 20px;
+            left: 10%;
+        }
+        #xpos-value,#ypos-value{
+            font-size: 4rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="contaaner">
+        <div class="xpos">
+           <h4 id="xpos-header">Mouse X POstion(px)</h4>
+           <span id="xpos-value">0</span>
+        </div>
+        <div class="ypos">
+            <h4 id="ypos-header">Mouse Y Potion(px)</h4>
+            <span id="ypos-value">0</span>
+        </div>
+    </div>
+
+    <script>
+       
+       const xpos = document.getElementById('xpos-value');
+       const ypos = document.getElementById('ypos-value');
+
+       window.addEventListener("mouseover", (e) =>{
+        console.log(e.clientX);
+        console.log(e.clientY);
+        xpos.textContent = e.clientX
+        ypos.textContent = e.clientY
+        
+       })
+    </script>
+</body>
+</html>
