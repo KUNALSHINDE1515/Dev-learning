@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timmer</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .container{
+        background-color: white;
+        border-radius: 10px;
+        width: 300px;
+        text-align: center;
+        box-shadow: 0 0 10 0 rgba(0, 0, 0, 0.6);
+    }
+    .header{
+        padding: 10px;
+        font-weight: bold;
+        background-color: blue;
+        color: white;
+        margin-bottom: 10px;
+    }
+    .time{
+        font-size: 70px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    button{
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        width: 70px;
+        font-size: 1rem;
+        color: white;
+    }
+    #start{
+        background-color: blue;
+    }
+    #stop{
+        background-color: red;
+    }
+    #reset{
+        background-color: green;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Pomodo Timer</h1>
+        </div>
+        <div class="time">
+            25:00
+        </div>
+        <div class="buttons">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <script>
+        const start = document.getElementById('start')
+        const stop = document.getElementById('stop')
+        const reset = document.getElementById('reset')
+      
+        const timer = document.querySelector('.time')
+
+        let minitues = 25;
+        let second = 0;
+        let timerId;
+        start.addEventListener('click', () => {
+           timerId = setInterval(() => {
+                if( second === 0){
+                    second = 59;
+                    if(minitues !== 0){
+                        minitues--;
+                    }
+                }else{
+                    second--;
+                }
+                timer.textContent = `${minitues}: ${second}`
+            }, 1000)
+        })
+
+        stop.addEventListener('click', () => {
+            clearInterval(timerId);
+        })
+        reset.addEventListener('click', () => {
+            minitues = 25;
+            second = 0;
+            timer.innerHTML = `${minitues}: 0${second}`
+        })
+    </script>
+</body>
+</html>
