@@ -50,10 +50,12 @@
         width: 100%;
         height: 5px;
         top: 18px;
+        /* background-color: red; */
+        transition: calc(-50%, -50%);
     }
-    /* #previus{
+    .color{
       background-color: #E0E0E0;
-    } */
+    }
   </style>
   <body>
     <div class="container">
@@ -65,14 +67,37 @@
             <div class="cicle4 circle">4</div>
         </div>
         <div class="buttons">
-            <button id="previus">Prev</button>
+            <button id="previus" class="color">Prev</button>
             <button id="next">Next</button>
         </div>
     </div>
 
     <script>
       const prevBtn = document.querySelector('#previus');
-      prevBtn.style.backgroundColor = "white"
+      const color = document.querySelector('.color');
+      const NextBtn = document.querySelector('#next')
+      const circle = document.querySelectorAll('.circle')
+      const ProgressBar = document.querySelector('.progress')
+      // console.log(ProgressBar);
+
+      
+      NextBtn.addEventListener( 'click', () => {
+        circle.forEach( (item) => {
+        // console.log(item);
+        item.style.border = "4px solid #3498DB"
+        ProgressBar.style.border = "3px solid #3498DB"
+        color.classList.remove("color")
+      })  
+      })
+
+      prevBtn.addEventListener ( 'click', () => {
+        circle.forEach( (item) => {
+        item.style.border = ""
+        ProgressBar.style.border = ""
+        color.classList.add("color")
+      }) 
+
+      })
       
       
     </script>
