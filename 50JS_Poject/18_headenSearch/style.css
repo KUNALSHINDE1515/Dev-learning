@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7D5FFE;
+    height: 100vh;
+}
+.search{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    animation: both;
+}
+i{
+    padding: 10px
+}
