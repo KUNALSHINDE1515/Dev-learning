@@ -1,0 +1,20 @@
+body{
+    background-color: #EFEDD6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content{
+    background-color: aqua;
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    color: gray;
+    font-weight: 800;
+    font-size: 32px;
+    margin-top: 20px;
+    animation: both;
+}
