@@ -39,5 +39,7 @@ if (random === 1) {
     console.log('error found'); 
 }
 li.innerText = `Roll Dice : ${random}`
-ul.appendChild(li);
+setTimeout( () => {
+    ul.appendChild(li);
+}, 1000)
 }
