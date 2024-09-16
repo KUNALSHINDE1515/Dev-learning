@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #F0F0F0;
+}
+.stopwach-container{
+    width: 100vw;
+    text-align: center;
+}
+.time{
+    font-size: 4rem;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-inline: 10px;
+}
