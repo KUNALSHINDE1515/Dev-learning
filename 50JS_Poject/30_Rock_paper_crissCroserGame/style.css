@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    border-radius: 10px;
+    margin: 5px;
+}
+#rock {
+    background-color: red;
+}
+#paper{
+    background-color: skyblue;
+}
+#scissors{
+    background-color: green;
+}
+.scrore{
+    display: flex;
+}
+.scrore span {
+    margin: 10px;
+}
+
+#comScore{
+    color: red;
+}
+#YourScore{
+    color: rgb(45, 163, 210);
+}
+
+#result{
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+@media(max-width:400px){
+h1{
+    font-size: 24px;
+}
+.scrore{
+    display: block;
+}
+}
