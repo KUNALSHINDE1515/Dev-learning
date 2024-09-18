@@ -1,0 +1,67 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: yellowgreen;
+}
+.container{
+    text-align: center;
+}
+.progress-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    position: relative;
+}
+.cicle{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 4px solid lightgray;
+}
+.progress-back-hr{
+    position: absolute;
+    height: 4px;
+    background-color: lightgray;
+    width: 100%;
+    top: 50%;
+    z-index: -1;
+}
+.progress-front-hr{
+    position: absolute;
+    height: 4px;
+    background-color: green;
+    width: 0%;
+    top: 50%;
+    z-index: -1;
+}
+.cicle.cheked{
+    border-color: green;
+}
+
+.btn{
+    margin-top: 20px;
+    margin: 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(129, 60, 193);
+}
+
+.fa-check{
+    color: green;
+    font-size: 1.2rem;
+}
