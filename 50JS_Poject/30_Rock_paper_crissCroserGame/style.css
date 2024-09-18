@@ -52,3 +52,9 @@ h1{
     display: block;
 }
 }
+
+@media(max-width:312px){
+    button{
+        padding: 10px 10px;
+    }
+}
