@@ -51,13 +51,8 @@ h1{
 .scrore{
     display: block;
 }
+button{
+    padding: 10px 10px;
+}
 }
 
-@media(max-width:312px){
-    button{
-        padding: 10px 10px;
-    }
-    h1{
-        font-size: 24px;
-    }
-}
