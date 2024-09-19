@@ -1,32 +1,34 @@
-const buttons = document.querySelectorAll("buttons")
-const result = document.getElementById('result')
+const buttons = document.querySelectorAll("button")
+const results = document.getElementById('result')
 const YourScore = document.getElementById('YourScore')
 const comScore = document.getElementById('comScore')
 
-let computerPlay ;
-let yourPlay;
+let computerPlay = 0 ;
+let yourPlay = 0;
 
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
-        const result = PlaySection(button.id, computerPlay())
-        result.textContent = result
+        console.log(button.id);
+        
+        const result = updatesectiom(button.id, comguess())
+        results.innerText = result
     })
 })
 
-function ComputerPlay() {
+function comguess() {
     const choise = ["rock", "paper" , "scrisscors"]
     const result =   Math.floor(Math.random() * choise.length) 
     return choise[result]
     
 }
 
-function PlaySection(PlaySection , computerSection) {
+function updatesectiom(PlaySection , computerSection) {
     
     if (PlaySection === computerSection) {
         return `Its atie !`
     }else if(
-        (PlaySection === "rock" && computerSection ==="scrisscors")
-        (PlaySection === "paper" && computerSection ==="rock")
+        (PlaySection === "rock" && computerSection ==="scrisscors") ||
+        (PlaySection === "paper" && computerSection ==="rock") ||
         (PlaySection === "scrisscors" && computerSection ==="paper")
     ){
         yourPlay++
