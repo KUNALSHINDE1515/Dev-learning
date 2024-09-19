@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background:linear-gradient(to left top, yellow, lightblue,yellow)
+}
+.box-container{
+    background: linear-gradient(to left top,lightblue,lightyellow);
+    max-width: 450px;
+    width: 85%;
+    box-shadow:  0 4px 10px rgba(0,0,0,.3);
+    border-radius: 5px;
+    padding: 15px;
+}
+.box-container h1 {
+    color: #008B8B;
+    font-family: cursive;
+    font-size: 32px;
+}
+.box-container, h2 {
+    color: #008B8B;
+    font-family: cursive;
+    font-size: 24px;
+    display: inline-block;
+}
+#input{
+    padding: 10px 20px;
+    width: 60%;
+    border-radius: 5px;
+    color: #008B8B;
+    outline: none;
+    border: none;
+    box-shadow:  0 4px 10px rgba(0,0,0,.3);
+}
