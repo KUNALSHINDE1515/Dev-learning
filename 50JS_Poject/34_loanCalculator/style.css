@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.cart{
+    background-color: #008B8B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+input{
+    display: block;
+    font-size: 1.3rem;
+    margin: 10px;
+    color: black;
+}
+#btn{
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: black;
+    background-color: burlywood;
+    font-weight: 700;
+}
+#Interset-to-pay{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: cursive;
+}
