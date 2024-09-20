@@ -6,19 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>chai js</h1>
+    <h1>Chai Aur  JavaScript</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
     <script>
+        const start = document.querySelector('#start')
+        const stop = document.querySelector('#stop')
 
-        const sayDate = function (str) {
-            console.log(str,Date.now());
-            
+        let intervalID ;
+        start.addEventListener("click" , function () {
+            intervalID = setInterval(sayDate , 1000, "hi")
+        })
+        stop.addEventListener("click" , function () {
+            clearInterval(intervalID)
+        })
+        const sayDate =  function (str) {
+            console.log(str,  Date.now(), "Kunal");
         }
-        const intervalId = setInterval( sayDate,5000, "hi")
-
-        clearInterval(intervalId)
-    </script>
+        </script>
 </body>
 
 </html>

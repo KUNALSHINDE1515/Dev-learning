@@ -9,19 +9,34 @@
     <h1>Asyn learning</h1>
     <button id="stop">stop</button>
     <script>
-        const sayKunal = (function(){
-            console.log("hello kunal"); 
-        },10000);
+    //     const sayKunal = (function(){
+    //         console.log("hello kunal"); 
+    //     },10000);
 
-       const chageTeaaxt = function() {
-         document.querySelector('h1').innerText = "best js series"
-       }
-       const changee =  setTimeout(chageTeaaxt, 2000)
-        document.querySelector('#stop').addEventListener('click', ( ) => {
-            clearTimeout(changee)
-            console.log("stop");
+    //    const chageTeaaxt = function() {
+    //      document.querySelector('h1').innerText = "best js series"
+    //    }
+    //    const changee =  setTimeout(chageTeaaxt, 2000)
+    //     document.querySelector('#stop').addEventListener('click', ( ) => {
+    //         clearTimeout(changee)
+    //         console.log("stop");
             
-        })
+    //     })
+    // const sayKunal = function () {
+       
+        
+    // }
+    const changeText = function () {
+         document.querySelector('h1').innerHTML = `worls best js series`
+    }
+
+    const changeMe = setTimeout(changeText,2000)
+
+    document.querySelector("#stop").addEventListener("click", () =>{
+        clearTimeout(changeMe)
+        console.log("Stopped");
+        
+    })
     </script>
 </body>
 
