@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        button{
+            padding: 10px 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Click To change Background Color</h1>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+    
+    <script>
+        const startbtn = document.getElementById("start")
+        const stopbtn = document.getElementById("stop")
+       
+        let InterValStop;
+
+        startbtn.addEventListener("click", () => {
+        //    console.log(RandomColor());
+        // console.log("kunal");
+        InterValStop = setInterval( () => {
+            document.body.style.backgroundColor = RandomColor()
+        },1000)
+                   
+        })
+
+        stopbtn.addEventListener("click", function () {
+            clearInterval(InterValStop)
+        } )
+
+        function RandomColor() {
+             const letters = '0123456789ABCDEF';
+             let color = "#"
+           for (let i = 0; i < 6; i++) {
+            color += letters[Math.round(Math.random() * 16)]
+           }
+           return color;
+        }
+    </script>
+</body>
+</html>
