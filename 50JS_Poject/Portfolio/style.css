@@ -1,0 +1,256 @@
+/* Gogle FontLinks */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Sofadi+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orarange-Color: #BD5D38;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    max-width: 1500px;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--orarange-Color);
+    width: 20vw;
+    height: 100vh;
+}
+
+.nav-container{
+    width: 100%;
+    margin: auto;
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-container{
+    height: 100%;
+    width: 70%;
+   
+
+}
+.img-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    border: 10px solid #CA7D60;
+}
+
+.img-container:hover{
+    transition: all 0.3s  ease-in-out;
+    transform: translateY(-5%);
+}
+
+.nav-container ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.nav-container li{
+    padding-bottom: 20px;
+    font-family: cursive;
+}
+.nav-container li a{
+    text-decoration: none;
+    color: #DEAE96;
+}
+
+.nav-container li a:hover{
+    color: #ffff;
+}
+.nav-container li a:active{
+   color: white;
+}
+
+#Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home-container{
+    width:  600px;
+    height: 400px;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    padding: 20px;
+}
+.home-container h1{
+    font-size: 4rem;
+    transition: all 03s ease;
+}
+#Colortext{
+    color: var(--orarange-Color);
+}
+#abouttext{
+    margin-bottom: 25px;
+}
+
+#para{
+    font-weight: 300;
+}
+.links i {
+    font-size: 2rem;
+    padding: 10px;
+    margin-inline: 5px;
+}
+.links a{
+    text-decoration: none;
+    color: #868E96;
+}
+.links i:hover{
+    color: var(--orarange-Color);
+}
+
+/* about us */
+#skills,#education,#Project{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* media Queries */
+
+@media(max-width:980px) {
+    nav{
+        width: 100vw;
+        height: 8vh;
+        position: relative;
+    }
+    .nav-container{
+        margin-top: 0vh;
+    }
+    .img-container{
+        display: none;
+    }
+    .nav-container ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 13px;
+        padding: 2px;
+    }
+     li p{
+        display: none;
+    }
+    body{
+        position: relative;
+    }
+    .bar{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 2rem;
+        color: white;
+    }
+    .projectDetails ul li {
+        list-style: none;
+    }
+    .content-education #headingeducation{
+        font-size: 4rem;
+    }
+}
+
+
+.content-education{
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+.content-education h4{
+    margin-block: 10px;
+}
+#headingeducation{
+    font-size: 5rem;
+    color: var(--orarange-Color);
+    margin-bottom: 10px;
+}
+
+.skills-content{
+    max-width: 600px;
+    max-height: 500px;
+    color: #868E96;
+    /* overflow: hidden; */
+    padding: 10px;
+    font-family: "Dosis", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills-content h1{
+    font-size: 4rem;
+    color: #343A40;
+    margin-bottom: 5px;
+}
+.skills-content h2{
+    font-style: italic;
+}
+.skill-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    margin: 20px;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.skill-img i{
+    font-size: 4rem;
+    color: #868E96;
+}
+.skill-img i:hover{
+    color: var(--orarange-Color);
+}
+.skills-content ul li {
+    color: var(--orarange-Color);
+}
+.skills-content ul li p {
+    color: #343A40;
+}
+
+section {
+    border-bottom: 1px solid gray;
+}
+
+.projectDetails{
+    max-width: 500px;
+    font-family: "Dosis", sans-serif;
+}
+
+.projectDetails ul li {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.projectDetails ul li a{
+    text-decoration: none;
+}
+.projectDetails h1{
+    font-size: 4rem;
+    color: var(--orarange-Color);
+    margin-bottom: 20px;
+
+}
+
