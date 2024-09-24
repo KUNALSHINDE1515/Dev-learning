@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main */
+main{
+    height: 100vh;
+    max-width: 1380px;
+    margin-inline: auto;
+    margin-top: 5vh;
+}
+.image-cotainer{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20;
+    align-items: center;
+    margin-inline: 10px;
+}
+.card{
+    height: 500px;
+    width: 400px;
+    background-color: aqua;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+img{
+    border-radius: 10px 10px 0 0;
+    height: 300px;
+    width: 300px;
+    /* margin: 20px; */
+}
