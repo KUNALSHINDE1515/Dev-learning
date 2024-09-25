@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    height: 100vh;
+}
+
+
+.container-card{
+    max-width: 700px;
+    background-color: white;
+    border-radius: 10px;
+    height: 500px;
+    padding: 10px;
+    display: flex;
+    font-family: cursive;
+}
+
+.text-section{
+    padding: 20px;
+    width: 100%;
+    margin-top: 25px;
+}
+.text-section h1{
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #242845;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.text-section p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+ul{
+     /* display: flex;
+    align-items: center; 
+    flex-direction: column;
+    justify-content: center;  */
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+ul li{
+    display: flex;
+    font-size: 0.9rem;
+    margin-block: 15px;
+}
+ul li img {
+    margin-right: 8px;
+}
+
+
+form{
+    margin-top: 10px;
+}
+label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#error{
+    font-size: 10px;
+    color: red;
+    display: none;
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 9px;
+    margin-top: 5px;
+    border-radius: 5px;
+    outline: none;
+        border: 1px solid black;
+}
+button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: serif;
+}
+
+button:hover{
+    background-color: rgb(255,102,70);
+    cursor: pointer;
+}
+/* Image SSEction */
+
+.image-section{
+    padding: 10px;
+    width: 100%;
+}
+.image-section img{
+    height: 100%;
+    width: 100%;
+
+}
+.contaoner h1, p, img {
+    margin-bottom: 10px;
+}
+
+@media(max-width:600px){
+    .container-card{
+        /* display: block; */
+        flex-direction: column-reverse;
+        align-items: center;
+        /* justify-content: center; */
+        margin-top: 50vh;
+        padding: none;
+    }
+}
