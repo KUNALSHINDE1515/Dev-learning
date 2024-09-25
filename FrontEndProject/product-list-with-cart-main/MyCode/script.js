@@ -1,21 +1,48 @@
-const cart = document.querySelector('.addCart')
+const cartBtn = document.querySelector('.cart-btn')
 
-
-cart.addEventListener("click",() => {
-cart.classList.add("hoverCart",CardTotal())
+let currPlayer = true
+cartBtn.addEventListener("click", () => {
+    
+    if (currPlayer === true) {
+        InDecVal()
+    }
+    
 })
 
 
-function CardTotal() {
-    const value = 1
-    const div = document.createElement('div')
-    div.innerHTML = `
-    <h1 id="Decrement"> - </h1> ${value} <h1 id="increment"> +</h1>
-    ` 
-    div.style.display = "flex"
-    div.style.alignItems = "Center"
-    div.style.justifyContent = "space-between"
-    div.style.width = '100%'
-    cart.textContent = ''
-    cart.appendChild(div)
+
+
+function InDecVal() {
+    
+    cartBtn.innerHTML = `
+    <span id="sub">-</span>
+    <span id="value">1</span>
+    <span id="add">+</span>
+    `
+    cartBtn.style.backgroundColor = "#C83B0E"
+    document.getElementById('sub').addEventListener("click", function () {
+        sub()
+    })
+    document.getElementById('add').addEventListener("click", function () {
+        add()
+    })
+    const value = document.getElementById('value')
+    value.innerText = val
+    value.style.color = "white"
 }
+
+
+let val = 1
+function add() {
+    val += 1
+    return val
+}
+
+function sub() {
+    val -= 1
+    return val
+}
+
+
+
+
