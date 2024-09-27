@@ -1,0 +1,77 @@
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+.back-btn{
+    padding: 6px 24px;
+    box-shadow: 0   0   8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contry-details{
+    display: flex;
+    align-items: center;
+    gap: 78px;
+    /* justify-content: center; */
+    margin-top: 70px;
+
+}
+
+.contry-details img {
+    width: 40%;
+}
+.deatails-text-con{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    column-gap: 16px;
+    max-height:150px;
+    flex-wrap: wrap;
+}
+.deatails-text-con p {
+    margin: 0;
+}
+.border-countries{
+    margin-top: 48px;
+    margin-right: 5px;
+}
+.border-countries a{
+    padding: 4px 16px;
+    box-shadow: 0   0   8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    font-size: 14px;
+}
+.border-countries{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media(max-width:820px){
+    .contry-details{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 32px;
+        gap: 15px;
+    }
+    .deatails-text-con{
+        max-height: unset;
+    }
+    .contry-details img {
+        width: 80%;
+        max-width: 350px;
+    }
+    
+}
+
+@keyframes tweet-skeleton {
+    0% {
+      background-color: rgb(209, 209, 209);
+    }
+    100% {
+      background-color: rgb(243, 243, 243);
+    }
+  }
+  
