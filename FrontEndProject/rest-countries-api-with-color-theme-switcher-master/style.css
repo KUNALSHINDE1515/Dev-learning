@@ -3,13 +3,22 @@
    
 }
 
+
 body{
+    --backgrounColor:white;
+    --text-color:black;
+    --element-color:white;
     margin: 0;
     padding: 0;
     font-family: Nunito ,sans-serif;
-
+    background-color: var(--backgrounColor);
+    color: var(--text-color);
 }
-
+body.dark {
+    --backgrounColor:hsl(207, 26%, 17%);
+    --text-color:white;
+    --element-color:hsl(209, 23%, 22%);
+}
 main{
     padding: 24px;
 }
@@ -20,6 +29,7 @@ a{
 .header-container{
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     padding-inline: 24px;
+    background-color: var(--element-color);
 }
 .header-content{
     display: flex;
@@ -30,7 +40,9 @@ a{
 }.title{
     font-weight: 800;
 }
-
+.theme-switcher{
+    cursor: pointer;
+}
 .conntries-container{
     max-width: 1200px;
     margin-inline: auto;
@@ -48,6 +60,7 @@ a{
     overflow: hidden;
     padding-bottom: 24px;
     transition: all 0.2s ease-in-out;
+    background-color: var(--element-color);
 }
 
 .country-card:hover{
@@ -79,4 +92,51 @@ a{
 {
     font-size: 14px;
 }
+.search-filter-container{
+    flex-direction: column;
+    gap: 24px;
+}
+}
+
+
+.search-filter-container{
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 16px;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.serach-container{
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
+    max-width: 320px;
+    width: 100%;
+    border-radius: 4px;
+    padding-left: 24px;
+    color: gray;
+    overflow: hidden;
+    background-color: var(--element-color);
+    color: var(--text-color);
+}
+.serach-container input{
+    border: none;
+    outline: none;
+    padding: 16px;
+    width: 90%;
+    background-color: var(--element-color);
+    color: var(--text-color);
+}
+.serach-container input::placeholder{
+    color: gray;
+}
+.filter{
+    width: 200px;
+    padding: 16px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    background-color: var(--element-color);
+    color: var(--text-color);
 }

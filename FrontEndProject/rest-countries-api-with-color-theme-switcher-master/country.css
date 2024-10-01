@@ -20,6 +20,7 @@ main{
 
 .contry-details img {
     width: 40%;
+    border : 1px solid #dddd;
 }
 .deatails-text-con{
     display: flex;

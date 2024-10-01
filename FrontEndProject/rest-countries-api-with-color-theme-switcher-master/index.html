@@ -12,8 +12,8 @@
     <!-- Nav Bar -->
      <nav class="header-container">
       <div  class="header-content">
-        <h2 class="title">Where in the world ?</h2>
-        <p> <i class="fa-regular fa-moon"></i> &nbsp;  Dark Mode</p>
+        <h2 class="title"><a href="./index.html">Where in the world ?</a></h2>
+        <p class="theme-switcher"> <i class="fa-regular fa-moon"></i> &nbsp;  Dark Mode</p>
       </div>
      </nav>
 
@@ -21,8 +21,23 @@
      <!-- main containet -->
 
      <main>
-        <div>
+        <div class="search-filter-container">
+            <div class="serach-container">
+             <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search  Country....">
+            </div>
+            <select class="filter">
+                <option value="Filter-by-resion" hidden>Filter by region</option>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+           </select>
+          </div>
 
+
+        <div>
         </div>
         <div class="conntries-container">
             <!-- <a href="#"  class="country-card">
