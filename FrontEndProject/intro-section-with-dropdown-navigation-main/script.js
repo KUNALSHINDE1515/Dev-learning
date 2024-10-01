@@ -67,10 +67,30 @@ barBtn.addEventListener("click", () => {
    navData.style.position = 'absolute'
    navData.style.top = '0px'
    navData.style.right = '0px'
-//    const closebtn = document.querySelector(".bar img")
-//    closebtn.src = './images/icon-close-menu.svg'
-//    closebtn.style.margin = '10px'
-   navData.append(navData)
-   
-  
+   const closebtn = document.querySelector(".bar img")
+   closebtn.src = './images/icon-close-menu.svg'
+   closebtn.classList.add('.closeIcon')
+   closebtn.style.marginLeft = '100px'
+   closebtn.style.padding = '10px'
+   if (active === false) {
+    navData.append(closebtn)
+    active = true
+   }else{
+    navData.remove(closebtn)
+    active = false
+   }
 })
+
+   
+
+// const allNav = document.querySelectorAll('.nav-item p')
+
+// allNav.forEach(function(item) {
+
+//    const div = document.createElement('div')
+//    div.innerHTML = item
+//    div.append(div)
+//    console.log(div);
+   
+
+// })
