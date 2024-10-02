@@ -61,8 +61,10 @@
         <form>
           <label>Cardholder Name</label>
           <input class="InputNAme" type="text" placeholder="e.g. Jane Appleseed">
+          <p class="nameError">Please Enter Valid Name</p>
           <label>Card Number</label>
           <input class="InputCardNumber" type="text" placeholder="e.g. 1234 5678 9123 0000">
+          <p class="CardError">Please Enter Valid Card Number</p>
         </form>
         <div class="date-container">
           <div class="date-cvv">
@@ -71,8 +73,11 @@
           </div>
          <div class="input-align">
           <input class="monthInput"  type="number" placeholder="MM" part="note">
+          <p class="monthInputErr">Please Enter Valid Name</p>
          <input class="yearInput" type="number" placeholder="YY">
-         <input class="cvv" type="number" placeholder="e.g. 123">
+         <p class="yearInputErr">Please Enter Valid Name</p>
+         <input class="cvv" type="number" placeholder="e.g. 123" max="100" min="999">
+         <p class="cvvInputErr">Please Enter Valid Name</p>
          </div>
         </div>
 

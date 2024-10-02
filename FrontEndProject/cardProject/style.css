@@ -16,13 +16,13 @@ main{
     background-image: url(./images/bg-main-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 35%;
+    width: 30%;
 }
 
 .front-cart{
     position: fixed;
-    top: 30%;
-    left: 25%;
+    top: 28%;
+    left: 13%;
     height: 150px;
     width: 300px;
     /* background: linear-gradient(right, black, red, green, blue); */
@@ -56,8 +56,8 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
-    top: 55%;
-    left: 30%;
+    top: 60%;
+    left: 15%;
     height: 150px;
     width: 300px;
     background-image: url(./images/bg-card-back.png);
@@ -142,4 +142,46 @@ button{
     background-color: #220930;
     color: white;
     font-weight: 600;
+}
+
+@media(max-width:960px){
+    .back-cart{
+        top: 72%;
+    }
+    .front-cart{
+        top: 3%;
+    }
+}
+
+
+@media(max-width:520px){
+    main{
+        display: block;
+    }
+    .left-cotainer{
+        height: 35vh;
+        width: 100%;
+    }
+    .front-cart{
+        top: 160px;
+        z-index: 1;
+        left: 5%;
+    }
+    .back-cart{
+        top: 65px;
+        left: 4%;
+    }
+    .right-container{
+        width: 100%;
+    }
+    .text-content{
+        margin-top: 5vh;
+    }
+    
+}
+
+.nameError, .CardError, .monthInputErr, .yearInputErr, .cvvInputErr{
+    text-align: end;
+    color: red;
+    display: none;
 }
