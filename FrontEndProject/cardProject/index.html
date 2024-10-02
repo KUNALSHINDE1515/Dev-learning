@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- 0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  
+  
+
+ 
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  
+
+  Completed state start
+
+  Thank you!
+  We've added your card details
+  Continue
+   -->
+  <main>
+    <div class="left-cotainer">
+      <div class="front-cart">
+        <img src="./images/card-logo.svg" alt="logo">
+        <h1 class="Card-Number">0000 0000 0000 0000</h1>
+        <div class="name-and-date">
+          <Span>Jane Appleseed</Span>
+          <span>
+            <Span id="month">00</Span>/
+            <span id="Year">00</Span>
+          </span>
+        </div>
+      </div>
+      <div class="back-cart">
+        <div class="cn-number">000</div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="text-content">
+        <form>
+          <label>Cardholder Name</label>
+          <input class="InputNAme" type="text" placeholder="e.g. Jane Appleseed">
+          <label>Card Number</label>
+          <input class="InputCardNumber" type="text" placeholder="e.g. 1234 5678 9123 0000">
+        </form>
+        <div class="date-container">
+          <div class="date-cvv">
+            <span>Exp. Date (MM/YY)</span>
+            <span>Cvv</span>
+          </div>
+         <div class="input-align">
+          <input class="monthInput"  type="number" placeholder="MM" part="note">
+         <input class="yearInput" type="number" placeholder="YY">
+         <input class="cvv" type="number" placeholder="e.g. 123">
+         </div>
+        </div>
+
+        <button>Confirm </button>
+      </div>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    font-family: Space Grotesk , sans-serif;
+}
+
+.left-cotainer{
+    /* background-color: hsl(278, 68%, 11%); */
+    background-image: url(./images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35%;
+}
+
+.front-cart{
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    height: 150px;
+    width: 300px;
+    /* background: linear-gradient(right, black, red, green, blue); */
+    background-image: url(./images/bg-card-front.png);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    text-align: start;
+}
+.front-cart img {
+    height: 36px;
+    width: 76px;
+}
+.Card-Number{
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.name-and-date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+}
+.back-cart{
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 55%;
+    left: 30%;
+    height: 150px;
+    width: 300px;
+    background-image: url(./images/bg-card-back.png);
+    border-radius: 10px;
+}
+.cn-number{
+    position: relative;
+    top: 50px;
+    left: 40px;
+    position: relative;
+    top: 68px;
+    left: 237px;
+    color: white;
+}
+
+.right-container{
+    background-color: #FEFEFE;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-content{
+    /* background-color: aqua; */
+    padding: 20px;
+    width: 350px;
+    min-height: 310px;
+}
+.text-content input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 4px;
+    margin-block: 5px;
+}
+
+input{
+    display: block;
+}
+
+.date-container{
+    margin-top: 10px;
+    /* display: flex; */
+    justify-content: space-between;
+}
+.date-container 
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+    
+}
+
+.date-container input{
+    width: 70px;
+   padding: 10px 20px;
+   display: inline-block;
+}
+
+.date-container label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.date-cvv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-align{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #220930;
+    color: white;
+    font-weight: 600;
+}
