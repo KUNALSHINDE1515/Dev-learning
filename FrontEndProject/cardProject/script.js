@@ -7,25 +7,26 @@ const frontCart = document.querySelector('.front-cart')
 let cartNerr =  document.querySelector('.CardError')
 
 
-cvv.addEventListener('input', (e) => {
-    if (e.target.value.length < 3) {
-        document.querySelector('.monthInputErr').style.display = "block"
-        document.querySelector('.cn-number').textContent = e.target.value
-    }
-    
-})
-yearInput.addEventListener('input', (e) => {
-    document.querySelector('#Year').textContent = e.target.value
-    
-})
-monthInput.addEventListener('input', (e) => {
-    document.querySelector('#month').textContent = e.target.value
-    
-})
+
 
 const button = document.querySelector('button')
 
 button.addEventListener("click", function() {
+    cvv.addEventListener('input', (e) => {
+        if (e.target.value.length <= 12) {
+            document.querySelector('.monthInputErr').style.display = "block"
+            document.querySelector('.cn-number').textContent = e.target.value
+        }
+        
+    })
+    yearInput.addEventListener('input', (e) => {
+        document.querySelector('#Year').textContent = e.target.value
+        
+    })
+    monthInput.addEventListener('input', (e) => {
+        document.querySelector('#month').textContent = e.target.value
+        
+    })
     let active = false
     let error = document.querySelector('.nameError')
 
