@@ -110,23 +110,7 @@ nav{
     padding: 10px;
 }
 
-@media(max-width:728px) {
-    .logo ul{
-        display: none;
-    }
-    .login-sing-up{
-        display: none;
-    }
-    .mobile-icon{
-        display: block;
-    }
-    .main-text-container{
-        margin-top: 5px;
-    }
-    .text-content h1{
-        font-size: 2rem;
-    }
-}
+
 
 .frist-section{
     max-width: 1180px;
@@ -205,4 +189,108 @@ nav{
     font-size: 1.2rem;
     color: white;
     line-height: 1.6rem;
+}
+
+.Third-Section{
+    margin-top: 20vh;
+}
+.third-section-container{
+    display: flex;
+}
+.img-cotaiiner{
+    width: 94%;
+    position: relative;
+    left: -143px;
+}
+.img-cotaiiner img{
+    width: 100%;
+}
+.text-cotainer-threee{
+    width: 60%;
+}
+
+.text-cotainer-threee{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.text-cotainer-threee h1{
+    font-size: 2rem;
+    color: #1A3B57;
+    width: 80%;
+}
+.text-cotainer-threee p{
+    font-size: 1.2rem;
+    color: black;
+    line-height: 1.6rem;
+    width: 80%;
+}
+
+footer{
+    background-color: #3A3B59;
+    height: 40vh;
+    border-radius: 0px 100px 0px 0px;
+}
+
+.fotter-container{
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    height: inherit;
+    padding: 15px;
+}
+
+.fotter-container ul{
+    list-style: none;
+}
+.fotter-container ul li{
+    margin-block: 10px;
+    color: white;
+}
+
+
+.footer-ul ul li:first-of-type{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.fotter-container ul li:not(:first-child):hover{
+    text-decoration: underline;
+}
+
+@media(max-width:728px) {
+    .logo ul{
+        display: none;
+    }
+    .login-sing-up{
+        display: none;
+    }
+    .mobile-icon{
+        display: block;
+    }
+    .main-text-container{
+        margin-top: 5px;
+    }
+    .text-content h1{
+        font-size: 2rem;
+    }
+    .second-section{
+        display: block;
+    }
+    .contaoner{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    }
+    .left-text-contanent {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
 }
