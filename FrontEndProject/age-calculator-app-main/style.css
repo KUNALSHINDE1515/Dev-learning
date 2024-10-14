@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Poppins , sans-serif;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+    
+.input-container{
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+}
+input{
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    width: 100px;
+    border: 1px solid gray;
+    outline: none;
+    font-weight: bold;
+}
+.btn-container{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-block: 10px;
+    border-bottom: 1px solid black;
+}
+button{
+    display: flex;
+   align-items: end;
+   background-color: #864DFE;
+   padding: 5px;
+   border-radius: 100%;
+   border: none;
+   outline: none;
+   position: relative;
+   cursor: pointer
+}
+
+
+/* remove arrows from number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
