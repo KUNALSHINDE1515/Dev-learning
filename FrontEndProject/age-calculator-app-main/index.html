@@ -16,29 +16,29 @@
 
 <div class="main-container">
 
-  <div class="age-calculator">
+ 
     <div class="input-container">
       <label>Day
-        <input type="number" placeholder="DD">
+        <input class="dayInput" type="number" placeholder="DD">
       </label>
-
       <label>Month
-        <input type="number" placeholder="MM">
+        <input class="monthInput" type="number" placeholder="MM">
       </label>
 
       <label>Year
-        <input type="number" placeholder="YYYY">
+        <input class="yearInput" type="number" placeholder="YYYY">
       </label>
     </div>
+    <p  id="error"></p>
     <div class="btn-container">
       <button><img src="./assets/images/icon-arrow.svg" alt="arrow-img"></button>
     </div>
     <div class="result-container">
-      <h1><Span>--</Span>Day</h1>
-      <h1><Span>--</Span>Month</h1>
-      <h1><Span>--</Span>Year</h1>
+      <h1><Span id="years">--</Span>Year</h1>
+      <h1><Span id="month">--</Span>Month</h1>
+      <h1><Span id="day">--</Span>Day</h1>
     </div>
-  </div>
+ 
 </div>
 
   <!-- Day
@@ -59,4 +59,5 @@
     Coded by <a href="#">Kunal Shinde</a>.
   </div> -->
 </body>
+<script src="./script.js"></script>
 </html>
