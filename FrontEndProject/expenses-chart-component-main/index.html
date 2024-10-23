@@ -5,39 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
   <title>Frontend Mentor | Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
+<main>
   
+  <div class="upper-container">
+    <div class="text">
+      <P>My balance</P>
+    <p><Strong>$921.48</Strong></p>
+    </div>
+    <div class="cicles">
+      <div class="circle1"></div>
+      <div class="cicle2"></div>
+    </div>
+  </div>
+  <div class="lower-container">
+    <p id="heading">Spending - Last 7 days</p>
+    <div class="colums">
+      <div class="mon">
+        <div class="rect"></div>
+        <p>  mon</p>
+      </div>
+      <div class="tue">
+        <div class="rect"></div>
+        <p>tue</p>
+      </div>
+      <div class="wed">
+        <div class="rect"></div>
+        <p>wed</p>
+      </div>
+      <div class="thu">
+        <div class="rect"></div>
+        <p>thu</p>
+      </div>
+      <div class="fri">
+        <div class="rect"></div>
+        <p>fri</p>
+      </div>
+      <div class="sat">
+        <div class="rect"></div>
+        <p>sat</p>
+      </div>
+      <div class="sun">
+        <div class="rect"></div>
+        <p>sun</p>
+      </div>
+    </div>
+    <div class="border"></div>
+<footer>
+  <div class="left">
+    <p> Total this month</p>
+    <h1> $478.33</h1>
+  </div>
+  <div class="right">
+    <p id="bb">+2.4%</p>
+    <p id="light"> from last month</p>
+  </div>
+</footer>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/KUNALSHINDE1515">Kunal Shinde</a>.
   </div>
+</main>
+  <!-- 
+  
+
+  
+
+  
+ 
+ 
+
+  
+  -->
+  
+  
+  <script src="./script.js"></script>
 </body>
 </html>
