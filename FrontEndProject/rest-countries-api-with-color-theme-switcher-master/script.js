@@ -58,3 +58,6 @@ const themeChanger = document.querySelector('.theme-switcher')
 themeChanger.addEventListener("click", () => {
     document.body.classList.toggle('dark')
 })
+
+
+console.log("Shinde");
