@@ -33,6 +33,8 @@ main{
     justify-content: center;
     flex-direction: column;
     padding: 5px;
+    /* background-color: cornsilk;
+    border-radius: 5px; */
 }
 .img{
     height: 50%;
