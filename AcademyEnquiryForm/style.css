@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Ysabeau+SC:wght@1..1000&display=swap');
+body {
+  font-family: "Work Sans", serif;
+    background-color: #766436;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: auto;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #EAE2B9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .logo {
+    width: 250px;
+    height: auto;
+  }
+  
+  h1 {
+    margin: 0.8rem 0;
+
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin: 0.5rem 0 0.2rem;
+    font-weight: 600;
+  }
+  
+  input,  button {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+  
+  button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+
+#times{
+  padding: 10px;
+  padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+  
+
+@media(max-width:500px){
+    .form-container{
+        max-width: 320px;
+    }
+}
