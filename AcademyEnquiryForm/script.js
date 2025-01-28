@@ -1,5 +1,5 @@
 
-let url = 'https://script.google.com/macros/s/AKfycbwx0RcK4OzUwPV9KNOX2p-0U0HcLn96IEViMYXyxaZWL1Fwejj3fea0d9s3PlbxctxfDw/exec';
+let url = 'https://script.google.com/macros/s/AKfycbwYDILeEU3r_0HfIr4JujvRpIMRUwuGKDw3RSE70IuqPPT-oPJjPybm7wGBIjmaPGV-cg/exec';
 
 let submitbn = document.getElementById('enquiryForm');
 
