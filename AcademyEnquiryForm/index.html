@@ -19,14 +19,40 @@
       <input type="text" id="studentName" name="studentName" placeholder="Enter Your Name" required>
 
       <label for="dob">Birthdate</label>
-      <input type="date" id="dob" name="dob" required>
+      <input type="date" id="dob" name="dob"  max="08-04-2025" required>
 
       <label for="std">Class</label>
       <input type="text" id="std" name="std" placeholder="Enter the class" required>
-
-      <label for="schoolName">School Name</label>
-      <input type="text" id="schoolName" name="schoolName" placeholder="School Name" required>
-
+      <label for="school">School Name</label>
+      <select id="schoolName" name="schoolName" onchange="toggleOtherInput(this)">
+        <option value="">-- Select School --</option>
+        <option value="Pawar Public School">Pawar Public School</option>
+        <option value="Wisdom World School">Wisdom World School</option>
+        <option value="Sadhana English Medium School">Sadhana English Medium School</option>
+        <option value="Amenora School">Amemenora School</option>
+        <option value="City International School">City International School</option>
+        <option value="JSPM Cygnet Public School and Junior College">JSPM Cygnet Public School and Junior College</option>
+        <option value="The Lexicon School">The Lexicon School</option>
+        <option value="VIBGYOR High School">VIBGYOR High School</option>
+        <option value="Sona I School">Sonai English Medium School</option>
+        <option value="St. Joseph’s School">St. Joseph’s School</option>
+        <option value="Green Woods School">Green Woods School</option>
+        <option value="Wonderland English Medium School">Wonderland English Medium School</option>
+        <option value="Hello Kids – Bluebells">Hello Kids – Bluebells</option>
+        <option value="Kidzee">GIIS</option>
+        <option value="Little Millennium">Little Millennium</option>
+        <option value="Candid Nursery School">Candid Nursery School</option>
+        <option value="Delhi Public School, Nyati County">Delhi Public School, Nyati County</option>
+        <option value="The Kalyani School">The Kalyani School</option>
+        <option value="St. Mary’s School">St. Mary’s School</option>
+        <option value="Nirmala Convent School">Nirmala Convent School</option>
+        <option value="Army Public School">Army Public School</option>
+        <option value="Other">Other</option>
+      </select>
+      <div id="otherSchoolInput">
+        <label for="otherSchool">Enter School Name</label>
+        <input type="text" id="otherSchool" name="otherSchool" placeholder="Type your school name here">
+      </div>
       <label for="fathersName">Father's Name</label>
       <input type="text" id="fathersName" name="fathersName" placeholder="Father's Name" required>
 

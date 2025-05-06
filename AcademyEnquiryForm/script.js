@@ -19,7 +19,7 @@ submitbn.addEventListener('submit', function(e) {
     alert("Please enter a valid phone number for Phone Number 2.");
     return;
   }
-
+ 
   // Show loading message
   const loadingMessage = document.getElementById('loadingMessage');
   loadingMessage.style.display = 'block';
@@ -51,4 +51,38 @@ submitbn.addEventListener('submit', function(e) {
 function validateMobileNumber(phoneNumber) {
   const regex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
   return regex.test(phoneNumber);
+}
+function toggleOtherInput(selectElement) {
+  const otherInput = document.getElementById('otherSchoolInput');
+  if (selectElement.value === 'Other') {
+    otherInput.style.display = 'block';
+  } else {
+    otherInput.style.display = 'none';
+  }
+}
+
+function DateToday() {
+  const today = new Date();
+const day = String(today.getDate()).padStart(2, '0');
+const month = String(today.getMonth() + 1).padStart(2, '0'); // Month is 0-indexed
+const year = String(today.getFullYear()).slice(-2); // Extract last two digits of year
+
+const formattedDate = `${day}-${month}-${year}`;
+console.log(formattedDate);
+  
+}
+
+
+function otherSchoolInput(){
+  const otherSchoolInut = document.getElementById('otherSchoolInput').value;
+  console.log(otherSchoolInut);
+  
+}
+
+
+
+function otherSchoolInput(){
+  const otherSchoolInut = document.getElementById('otherSchoolInput').value;
+  console.log(otherSchoolInut);
+  
 }
