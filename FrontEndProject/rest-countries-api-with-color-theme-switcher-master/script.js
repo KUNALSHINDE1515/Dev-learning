@@ -21,6 +21,7 @@ filterByResgion.addEventListener('change', function(e){
 })
 
 
+
 function rederCountries(data) {
     countriesContainer.innerHTML = ''
     data.map( function (country) {
@@ -60,4 +61,4 @@ themeChanger.addEventListener("click", () => {
 })
 
 
-console.log("Shinde");
+
